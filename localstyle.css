@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Doulos SIL WF';
+    src: url('/webfonts/DoulosSIL-Rwebfont.woff2') format('woff2'),
+         url('/webfonts/DoulosSIL-R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+@font-face {
+    font-family: 'Junicode WF';
+    src: url('/webfonts/Junicode.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+
+
+
+#outputDiv, #inputDiv {
+	margin: 5px 7.5% 0 7.5%; 
+	font-family: "Doulos SIL", serif; 
+	}
+
+#output,#input {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+	font-family: "Doulos SIL", serif; 
+	font-size: 2em;
+	height: 6em;
+	}
+
+#showNotes {
+	margin: 20px 7.5% 0 7.5%; 
+	}
+.smallprint {
+	margin-right: 1em;
+	}

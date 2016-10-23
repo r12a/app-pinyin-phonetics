@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="UTF-8" />
+<title>Pinyin phonetics</title>
+<link rel="stylesheet" type="text/css" href="../../style/docs.css" />
+<link rel="stylesheet" type="text/css" href="localstyle.css" />
+<script type="text/javascript" src="../../code/boilerplate.js"></script>
+
+<script type="text/javascript" src="../../code/normalization/js/n11n.js">  </script>
+<script type="text/javascript" src="../../code/normalization/js/n11ndata-lite.js">  </script>
+<script type="text/javascript" src="localtranscription.js">  </script>
+</head>
+
+<body class="app">
+<header>
+<div id="header-boilerplate"></div>
+<script>document.getElementById('header-boilerplate').innerHTML = bp_appHeader('/images/world.gif','Pinyin phonetics','');</script>
+</header>
+
+
+<p style="margin-right:7.5%;">Type pinyin in the top box and see an approximate phonetic transcription appear below.</p>
+
+
+<div id="inputDiv">
+  <textarea dir="auto" rows="2" cols="80" id="input" name="input" spellcheck="false" 
+  			onInput="document.getElementById('output').value=transcribe(this.value);"></textarea>
+</div>
+
+
+
+<div id="outputDiv">
+  <textarea rows="2" cols="80" id="output" name="output" spellcheck="false"></textarea>
+</div>
+
+
+
+
+<div class="smallprint">Updated 
+  <!-- #BeginDate format:aEn2 -->Sun 23-Oct-2016<!-- #EndDate -->
+&bull; tags <a href="http://rishida.net/blog/index.php?tag=chinese" title="Show all blog posts tagged with 'chinese'">chinese</a>, <a href="http://rishida.net/blog/?tag=apps" title="Show all blog posts tagged with 'apps'">apps</a>.<br/>
+Copyright <a href="mailto:r12a@w3.org">r12a@w3.org</a>. Licence <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC-By</a>.
+</div>
+
+
+</body>
+</html>

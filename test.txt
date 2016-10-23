@@ -1,0 +1,29 @@
+test file for pinyin phonetics
+
+
+source
+ba pa ma fa da ta na la ga ka ha ja qa xa zha cha sha ra za ca sa wa ya
+zi ci si zhi chi shi ri
+a e ai ei ao ou an en ang eng ong er
+i ia ie iao iu ian in iang ing iong
+yi ya ye yao you yan yin yang ying yong
+u ua uo o uai ui uan un uang
+wu wa wo wo wai wei wan wen wang weng
+ü ue üe üan ün
+yu yue yue yuan yun
+ju qu xu
+
+
+
+
+target
+pa pʰa ma fa ta tʰa na la ka kʰa xa ʨa ʨʰa ɕa ʈʂa ʈʂʰa ʂa ɻa ʦa ʦʰa sa u̯ä i̯ä
+ʦɹ̩ ʦʰɹ̩ sɹ̩ ʈʂɻ ʈʂʰɻ ʂɻ ɻɚ
+a ɤ ai̯ ei̯ ɑu̯ ou̯ an ən ɑŋ əŋ ʊŋ əɻ
+i i̯ä i̯e i̯ɑu̯ i̯ou̯ i̯ɛn in i̯ɑŋ iŋ i̯ʊŋ 
+i i̯ä i̯e i̯ɑu̯ iou̯ i̯ɛn in i̯ɑŋ iŋ i̯ʊŋ 
+u u̯ä u̯o̞ u̯o̞ u̯ai̯ u̯ei̯ u̯an u̯ən u̯ɑŋ 
+u u̯ä u̯o̞ u̯o̞ u̯ai̯ uei̯ u̯an uən u̯ɑŋ uəŋ 
+y y̯e y̯e y̯ɛn yn 
+y y̯e y̯e y̯ɛn yn 
+ʨy ʨʰy ɕy
