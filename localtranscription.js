@@ -1,13 +1,13 @@
 ﻿function transcribe (value) {
-	
+
 	value = value.toLowerCase()
-	
+
 	// convert double consonants
 	value = value.replace(/zh/g,"ẑ")
 	value = value.replace(/ch/g,"ĉ")
 	value = value.replace(/sh/g,"ŝ")
 	var consonants = 'bpmfdtlgkhjqxzẑcĉsŝwy'
-	
+
 	// break into syllables
 	value = value.replace(/'/g," ")
 	value = value.replace(/ng/g,"ŋ")
@@ -17,7 +17,7 @@
 	var syllables = ''
 	for (var i=0;i<value.length;i++) {
 		if (inSet(consonants,value[i])) syllables += ' '+value[i]
-		else syllables += value[i] 
+		else syllables += value[i]
 		}
 	value = syllables.trim()
 
@@ -31,22 +31,26 @@
 	value = value.replace(/ē/g,"e")
 	value = value.replace(/ě/g,"e")
 	value = value.replace(/è/g,"e")
-	
+
 	value = value.replace(/í/g,"i")
 	value = value.replace(/ī/g,"i")
 	value = value.replace(/ǐ/g,"i")
 	value = value.replace(/ì/g,"i")
-	
+
 	value = value.replace(/ó/g,"o")
 	value = value.replace(/ō/g,"o")
 	value = value.replace(/ǒ/g,"o")
 	value = value.replace(/ò/g,"o")
-	
+
 	value = value.replace(/ú/g,"u")
 	value = value.replace(/ū/g,"u")
 	value = value.replace(/ǔ/g,"u")
 	value = value.replace(/ù/g,"u")
-	
+
+	value = value.replace(/ǘ/g,"ü")
+	value = value.replace(/ǖ/g,"ü")
+	value = value.replace(/ǚ/g,"ü")
+	value = value.replace(/ǜ/g,"ü")
 
 	// special yu sounds
 	value = value.replace(/yue/g,"Y̯E")
@@ -84,7 +88,7 @@
 	value = value.replace(/ʈʂʰi/g,"ʈʂʰɻ")
 	value = value.replace(/ʂi/g,"ʂɻ")
 	value = value.replace(/ɻi/g,"ɻɚ")
-	
+
 	// special u sounds
 	value = value.replace(/ʨu/g,"ʨü")
 	value = value.replace(/ʨʰu/g,"ʨʰü")
@@ -126,13 +130,13 @@
 	value = value.replace(/ê/g,"ɛ̝")
 	value = value.replace(/io/g,"i̯ɔ̝")
 	value = value.replace(/o/g,"ɔ̝")
-	
+
 	value = value.replace(/U/g,"u̯")
 	value = value.replace(/I/g,"i̯")
 	value = value.replace(/E/g,"e")
 	value = value.replace(/O/g,"o")
 	value = value.replace(/Y/g,"y")
-	
+
 	value = value.replace(/[ ]+/g,' ')
 	value = value.replace(/\n /g,'\n')
 	return value
@@ -148,6 +152,3 @@ function inSet (group, ch) {
 	if (group.indexOf(ch) > -1) return true
 	else { return false }
 	}
-
-
-
